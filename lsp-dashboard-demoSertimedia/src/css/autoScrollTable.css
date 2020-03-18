@@ -1,0 +1,6 @@
+.table-responsive {
+  overflow-y: auto;
+}
+.table-responsive:hover {
+  border-color: red;
+}

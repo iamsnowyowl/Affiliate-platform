@@ -1,0 +1,15 @@
+package com.aplikasisertifikasi.asesor.lspabi.Entity;
+
+public interface StatusKegiatanEntity {
+    String ON_REVIEW_APPLICANT_DOCUMENT = "ON_REVIEW_APPLICANT_DOCUMENT";
+    String ON_COMPLETED_REPORT = "ON_COMPLETED_REPORT";
+
+    String REAL_ASSESSMENT = "REAL_ASSESSMENT";
+
+    String PLENO_MEMBER_READY = "PLENO_MEMBER_READY";
+    String PLENO_DOC_COMPLETED = "PLENO_DOCUMENT_COMPLETED";
+    String PLENO_REPORT_READY = "PLENO_REPORT_READY";
+
+    String PRINT_CERTIFICATE = "PRINT_CERTIFICATE";
+    String COMPLETED = "COMPLETED";
+}

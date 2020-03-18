@@ -1,0 +1,35 @@
+.DS_Store
+.env
+cache/*
+!cache/index.html
+
+logs/*
+!logs/index.html
+
+!*/.htaccess
+
+composer.lock
+
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+#LINUX
+.fuse_hidden*
+.Trash-*
+.nfs*
+.DS_Store
+*._*
+*._.*

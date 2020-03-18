@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1029315561643",
+    "firebase_url": "https://nas-app-eed04.firebaseio.com",
+    "project_id": "nas-app-eed04",
+    "storage_bucket": "nas-app-eed04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029315561643:android:2332eb59c444088c",
+        "android_client_info": {
+          "package_name": "com.aplikasisertifikasi.asesor.lspabi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029315561643-97prqt7nmeuup0epqtmv2fq0g85umbeq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aplikasisertifikasi.asesor.lspabi",
+            "certificate_hash": "6043c5bb082aac9533f005ce75dc6f4392d157dc"
+          }
+        },
+        {
+          "client_id": "1029315561643-ler73as7fmr7pbc96eeqkr5fsk0bnmes.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyEwc9LQ8wdMBA3kZvhKx6gI5aTCnf02I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029315561643-ler73as7fmr7pbc96eeqkr5fsk0bnmes.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

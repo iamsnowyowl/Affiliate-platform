@@ -1,0 +1,17 @@
+server {
+			listen 80;
+			listen [::]:80;
+			index index.php index.html index.htm;
+			server_name nginx-central ckpni-peserta.docker.localhost;
+			error_log  /var/log/nginx/error.log;
+			access_log /var/log/nginx/access.log;
+
+			server_tokens off;
+			error_page 404 /404.html;
+			error_page 500 502 503 504 /50x.html;
+
+			location / {
+                root /usr/share/app/ckpni-peserta;
+                try_files $uri $uri/ =404;
+        }
+	}

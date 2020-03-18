@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".Main.Fragment.Profile.Sertifikasi.AddSertifikasi.SertifikasiSaved">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="226dp"
+            android:layout_height="161dp"
+            android:src="@drawable/success" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/secondaryTextColor"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:text="@string/certificate_submitted"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/secondaryColor"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="@string/notify_when_completed"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_certification_saved"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:textSize="@dimen/text_size"
+            android:text="@string/ok"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+#notification th {
+  border: 1px solid #7de924;
+}
+
+.headers {
+  font-size: 30px !important;
+}
+
+.table-css {
+  font-size: 25px;
+}
+
+.listReviewDocument {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #fe485f;
+}
+
+thead {
+  /* background-color: #f2f2f2; */
+  font-size: 20px;
+}
+
+.stateRequestAssessment {
+  color: gray;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.liReviewDocument {
+  color: #fe485f;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listReadyPraAssessment {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #ff9f00;
+}
+
+.liReadyPraAssessment {
+  color: #ff9f00;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listRealAssessment {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #ffee19;
+}
+
+.liRealAssessment {
+  color: #a39910;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listPleno {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #98c8ff;
+}
+
+.liPleno {
+  color: #98c8ff;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listPlenoFinish {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #ce96ff;
+}
+
+.liPlenoFinish {
+  color: #ce96ff;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listPrintCertificate {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #5bf853;
+}
+
+.liPrintCertificate {
+  color: #166112;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.listReject {
+  font-size: 50px;
+  margin-bottom: 0%;
+  margin-top: auto;
+  margin-left: 21%;
+  margin-right: auto;
+  color: #ff0000;
+}
+
+.liReject {
+  color: black;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.liWaitingConfirmation {
+  color: yellow;
+  float: left;
+  font-size: 70%;
+  margin-right: 35px;
+}
+
+.tags {
+  background-color: transparent !important;
+  border: none;
+}
+
+th.column-center {
+  text-align: center !important;
+}
+
+th.column-right {
+  text-align: right !important;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            android:background="@color/md_white_1000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="@dimen/margin_right_icon">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/logo_lsp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_to_add_schedule"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/round"
+                    android:padding="5dp"
+                    android:src="@drawable/add_schedule" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/schedule_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_horizontal_layout"
+                android:padding="10dp"
+                app:mcv_arrowColor="@color/secondaryTextColor"
+                app:mcv_calendarMode="month"
+                app:mcv_dateTextAppearance="@style/CustomTextAppearance"
+                app:mcv_headerTextAppearance="@style/CustomTextAppearance"
+                app:mcv_selectionColor="@color/primaryColorDark"
+                app:mcv_titleAnimationOrientation="horizontal"
+                app:mcv_weekDayTextAppearance="@style/CustomTextAppearance">
+
+            </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+            <LinearLayout
+                android:id="@+id/lower_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/secondaryColor"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

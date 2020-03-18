@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Arvo";
+  font-display: auto;
+  src: local("Arvo"),
+    url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2)
+      format("woff2");
+}
+
+.main {
+  background-color: #e4e5e6 !important;
+}
+
+.required {
+  color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

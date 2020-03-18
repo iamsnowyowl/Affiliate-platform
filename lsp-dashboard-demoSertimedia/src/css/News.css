@@ -1,0 +1,30 @@
+.title {
+  font-family: SourceSansPro-Bold;
+  font-weight: bold;
+}
+
+.creator {
+  color: gray
+}
+
+.label{
+  font-weight: bold
+}
+
+.author{
+  font-style: oblique;
+  font-weight: normal
+}
+
+p.tags{
+  font-size: 85%;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-left: 4%;
+  border-width: 2px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  background-color: darkgray;
+}

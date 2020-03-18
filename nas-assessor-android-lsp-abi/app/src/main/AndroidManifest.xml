@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aplikasisertifikasi.asesor.lspabi"
+    android:versionCode="${versionCode}"
+    android:versionName="${versionName}">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.aplikasisertifikasi.asesor.lspabi.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.aplikasisertifikasi.asesor.lspabi.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".Core.LSPApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app_asesor"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app_asesor"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Main.Fragment.Profile.Settings.TermConditions.TermConditionsActivity"></activity>
+        <activity android:name=".Main.Fragment.Profile.Settings.PrivacyPolicies.PrivacyPoliciesActivity" />
+        <activity android:name=".Main.Fragment.Profile.Settings.SettingsActivity" />
+        <activity android:name=".SplashScreen.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Login" />
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".Signup.Signup" />
+        <activity android:name=".Main.Fragment.Profile.EditProfile.EditProfile" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity android:name=".ForgotPassword.ForgotPassword" />
+        <activity
+            android:name=".Main.Notification.Notifications"
+            android:parentActivityName=".Main.MainActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="LSPACSNTFDEF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".Main.Fragment.Home.DetailHome.DetailHome" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Main.Fragment.Home.LokasiUjian.LokasiUjian"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Main.Fragment.History.DetailHistory.DetailHistory" />
+        <activity android:name=".Main.Fragment.Schedule.DetailSchedule.DetailSchedule" />
+        <activity android:name=".Main.Fragment.Home.DetailHome.DetailApplicant.DetailApplicant" />
+        <activity android:name=".Main.Fragment.Profile.Sertifikasi.AddSertifikasi.AddSertifikasi" />
+        <activity
+            android:name=".Signup.Signature.Signature"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.Fragment.Profile.EditProfile.EditSignature"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main.Fragment.Profile.EditProfile.PaktaIntegritas.EditPaktaIntegritas" />
+        <activity android:name=".Main.Fragment.Schedule.AddSchedule.AddScheduleActivity" />
+        <activity android:name=".Main.Fragment.Schedule.AddSchedule.ScheduleSaved" />
+        <activity android:name=".Main.Fragment.Profile.Sertifikasi.AddSertifikasi.SertifikasiSaved" />
+        <activity android:name=".Main.Fragment.Profile.Sertifikasi.DetailSertifikasi.DetailSertifikasiActivity" />
+        <activity
+            android:name=".Main.Notification.DetailNotification.DetailNotificationActivity"
+            android:parentActivityName=".Main.Notification.Notifications">
+            <!--<intent-filter>-->
+            <!--<action android:name="LSPACSNTFOFR" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".Main.Fragment.Home.SuratMenyurat.SuratMenyuratActivity" />
+        <activity android:name=".Main.Fragment.Home.SuratMenyurat.DetailSuratMenyurat.DetailSuratMenyuratActivity" />
+        <activity android:name=".Main.Fragment.Home.DetailHome.Pleno.AssessmentPlenoActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fcc5cc007849c5a2b18e39a7b8f22f873726d65f" />
+    </application>
+
+</manifest>

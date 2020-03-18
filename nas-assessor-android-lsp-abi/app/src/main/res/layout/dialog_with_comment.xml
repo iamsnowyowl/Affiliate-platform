@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog.title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient1"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:id="@+id/dialog.text_descriptions"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginVertical="20dp"
+        android:paddingHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/dialog.descriptions"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@color/md_grey_100"
+        android:paddingHorizontal="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondaryTextColor"
+        android:textColorHint="@color/md_grey_400"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/dialog.negative_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_grey"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryTextColor" />
+
+        <Button
+            android:id="@+id/dialog.positive_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryTextColor" />
+    </LinearLayout>
+
+</LinearLayout>

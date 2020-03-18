@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_notification"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    android:paddingHorizontal="@dimen/margin_horizontal_layout"
+    android:paddingTop="@dimen/margin_horizontal_layout">
+
+    <ImageView
+        android:id="@+id/img_notif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/margin_right_icon"
+        android:background="@drawable/round"
+        android:padding="8dp"
+        android:src="@drawable/check" />
+
+    <TextView
+        android:id="@+id/judul_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_notif"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tgl_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lower_line"
+        android:layout_marginBottom="@dimen/margin_bottom_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/secondaryTextColor" />
+
+    <LinearLayout
+        android:id="@+id/lower_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/secondaryColor"
+        android:orientation="horizontal" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/viewBackground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="right"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@color/md_red_500">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center|right"-->
+    <!--android:layout_marginRight="13dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/delete" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="Hapus Notifikasi"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/viewForeground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@color/white">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="5dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/md_deep_orange_500" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="10dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/judulNotification"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/md_grey_600"-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tglNotification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/md_grey_600" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/deskripsiNotification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:textColor="@color/md_grey_800" />-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+server {
+        listen 80;
+        listen [::]:80;
+        server_name tes.docker.localhost;
+
+        error_log  /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+	server_tokens off;
+
+
+	location / {
+                root /usr/share/app/kdf-api;
+                try_files $uri $uri/ =404;
+        }
+
+        location /documentation {
+                root /usr/share/app/swagger;
+                try_files $uri $uri/ =404;
+        }
+
+        location ~ \.php$ {
+                root /usr/share/app/kdf-api;
+                fastcgi_pass php7.2.10-fpm:9000;
+                fastcgi_index index.php;
+                fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+        }
+}

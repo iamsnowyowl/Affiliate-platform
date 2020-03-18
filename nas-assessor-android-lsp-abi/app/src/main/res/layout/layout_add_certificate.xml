@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_empty_certificate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/empty_certificate"
+        android:layout_width="226dp"
+        android:layout_height="69dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
+
+    <TextView
+        android:id="@+id/no_add_certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="8sp"
+        android:textColor="@color/secondaryColor"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_yours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="8sp"
+        android:textColor="@color/secondaryColor"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btn_add_skill_in_empty"
+        android:layout_width="210dp"
+        android:layout_height="39dp"
+        android:background="@drawable/round_button"
+        android:elevation="8dp"
+        android:text="@string/add_certificate_of_expertise"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

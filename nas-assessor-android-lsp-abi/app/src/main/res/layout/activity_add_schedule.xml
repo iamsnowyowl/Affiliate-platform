@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".Main.Fragment.Schedule.AddSchedule.AddScheduleActivity">
+
+    <LinearLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/gradient1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layer"
+        android:background="@color/backgroundPrimary" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_top_layout"
+        android:layout_height="50dp"
+        android:paddingRight="@dimen/margin_horizontal_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/btn_close_add_certificate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/x_white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/schedule_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:text="@string/set_avail_schedule"
+        android:textColor="@color/backgroundPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_title"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_layout"
+        app:cardBackgroundColor="@color/backgroundPrimary"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/pick_schedule_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_layout"
+            android:padding="10dp"
+            app:mcv_arrowColor="@color/secondaryTextColor"
+            app:mcv_calendarMode="month"
+            app:mcv_dateTextAppearance="@style/CustomTextAppearance"
+            app:mcv_headerTextAppearance="@style/CustomTextAppearance"
+            app:mcv_selectionColor="@color/primaryColorDark"
+            app:mcv_titleAnimationOrientation="horizontal"
+            app:mcv_weekDayTextAppearance="@style/CustomTextAppearance">
+
+        </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/save_schedule_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save_schedule"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_layout"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_right_icon"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/md_grey_100"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/title_assessment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kegiatanAsesmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="105dp"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tglAsesmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/noteAsesmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/secondaryTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/assessment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_assessment_container">
+
+            <RelativeLayout
+                android:id="@+id/btnPraAssessment"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_button"
+                    android:padding="3dp"
+                    app:cardBackgroundColor="@color/primaryColorLight"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_button"
+                        android:gravity="center"
+                        android:text="@string/pra_assessment"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnAssessment"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_asesmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:elevation="5dp"
+                    android:padding="3dp"
+                    app:cardBackgroundColor="@color/primaryColorLight"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_button"
+                        android:gravity="center"
+                        android:text="@string/assement"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <com.nex3z.notificationbadge.NotificationBadge
+                    android:id="@+id/counter_badge_asesmen"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignTop="@id/card_asesmen"
+                    android:layout_marginLeft="-27dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_toRightOf="@id/card_asesmen"
+                    android:elevation="10dp"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    app:nbAnimationEnabled="true"
+                    app:nbBackground="@drawable/badge"
+                    app:nbMaxTextLength="2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnPleno"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_pleno"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/primaryColorLight"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_button"
+                        android:gravity="center"
+                        android:text="@string/pleno"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <com.nex3z.notificationbadge.NotificationBadge
+                    android:id="@+id/counter_badge_pleno"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignTop="@id/card_pleno"
+                    android:layout_marginLeft="-27dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_toRightOf="@id/card_pleno"
+                    android:elevation="10dp"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    app:nbAnimationEnabled="true"
+                    app:nbBackground="@drawable/badge"
+                    app:nbMaxTextLength="2" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/unpaid"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+   php7.2.10-fpm:
+     container_name: php7.2.10-fpm
+     build: 
+       context: .
+       dockerfile: Dockerfile
+     restart: always
+     tty: true
+     networks:
+       - traefiklocal
+     volumes:
+       - ../../../src:/usr/share/app
+       - ./data/logs:/var/log
+networks:
+  traefiklocal:
+    external: true
+

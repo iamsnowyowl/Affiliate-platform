@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="@android:color/white" />
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/bottom_navigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--app:itemBackground="@color/bottomTab"-->
+    <!--app:itemIconTint="#F97F51"-->
+    <!--app:menu="@menu/menu"-->
+    <!--app:itemTextColor="#F97F51" />-->
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_activeTabColor="@color/primaryColorDark"
+        app:bb_inActiveTabColor="@color/disableButtonColor"
+        app:bb_showShadow="true"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_badgeBackgroundColor="@color/md_red_600"
+        app:bb_tabXmlResource="@xml/bottombar_res" />
+
+</RelativeLayout>

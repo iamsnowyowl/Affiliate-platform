@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="titleLSP">#6a1b9a</color>
+    <color name="backgroundPrimary">#FFFFFF</color>
+    <color name="primaryColorLight">#fdd634</color>
+    <color name="primaryColorDark">#F0AA1E</color>
+    <color name="secondaryColor">#e0e0e0</color>
+    <color name="primaryTextColor">#000</color>
+    <color name="secondaryTextColor">#868686</color>
+    <color name="spinnerColor">#eeeeee</color>
+    <color name="calendarColor">#ffb74d</color>
+    <color name="disableButtonColor">#e0e0e0</color>
+    <color name="unreadNotif">#649ed19b</color>
+    <color name="lineOrange">#E96930</color>
+    <color name="lineBlue">#587FFB</color>
+    <color name="lineGrey">#AEAEAE</color>
+</resources>

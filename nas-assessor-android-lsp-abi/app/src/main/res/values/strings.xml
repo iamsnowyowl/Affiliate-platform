@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">LSP ABI Asesor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--general-->
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="ok">Oke</string>
+    <string name="cancel">Batal</string>
+    <string name="confirmation">Data yang anda isi sudah benar?</string>
+    <string name="empty_email">Email belum diisi</string>
+    <string name="email_validation">Harus dalam format email</string>
+    <string name="data_not_completed">Data belum lengkap</string>
+    <string name="success">Berhasil</string>
+    <string name="check_email_for_password">Silahkan cek email anda untuk mengatur password</string>
+    <string name="assign_here">Tanda Tangan Disini</string>
+    <string name="attention">Perhatian</string>
+    <string name="save">Simpan</string>
+    <string name="send">Kirim</string>
+    <string name="lost_connection">Ups, sepertinya terjadi masalah dengan jaringan internet anda. Silahkan coba lagi.</string>
+    <string name="assign_the_letter">Anda tidak menyetujui surat pernyataan ini?</string>
+    <string name="info_in_here">Beri keterangan disini…</string>
+    <string name="assign">Menyetujui</string>
+    <string name="unassign">Tidak Menyetujui</string>
+
+    <string name="soon">SEGERA</string>
+    <string name="pra_assessment">PRA ASESMEN</string>
+    <string name="pra_assessment_selesai">PRA ASESMEN SELESAI</string>
+    <string name="assement">ASESMEN</string>
+    <string name="assement_selesai">ASESMEN SELESAI</string>
+    <string name="pleno">PLENO ASESMEN</string>
+    <string name="pleno_selesai">PLENO ASESMEN SELESAI</string>
+    <string name="print_certificate">PENERBITAN SERTIFIKAT</string>
+    <string name="completed">ASESMEN SUDAH SELESAI</string>
+
+    <string name="status_recommendation">Hasil Rekomendasi Asesor</string>
+    <string name="recommended">Direkomendasikan</string>
+    <string name="not_recommended">Belum direkomendasikan</string>
+    <string name="status_graduation">Hasil Keputusan Pleno</string>
+    <string name="competent">Kompeten</string>
+    <string name="not_competent">Belum Kompeten</string>
+
+    <string name="empty_assessee">Belum ada asesi pada asesmen ini.</string>
+    <string name="try_again">Coba lagi</string>
+    <string name="load_failed">Gagal load data</string>
+    <string name="data_must_completed">Data harus lengkap</string>
+    <string name="cannot_access_assessment">Maaf anda belum bisa mengakses menu assessment</string>
+
+    <string name="view">Lihat</string>
+    <string name="seconds">detik lalu</string>
+    <string name="minutes">menit lalu</string>
+    <string name="hours">jam lalu</string>
+
+    <string name="paid">LUNAS</string>
+    <string name="unpaid">BELUM LUNAS</string>
+    <string name="letters">Surat Menyurat</string>
+
+    <string name="pending">Menunggu</string>
+    <string name="add_expertise">Tambah Keahlian</string>
+
+    <!--letter-->
+    <string name="letter_was_agreed">Status surat telah disetujui</string>
+    <string name="letter_was_disagreed">Status surat tidak disetujui</string>
+
+    <!--notif-->
+    <string name="empty_notif">Belum ada pemberitahuan saat ini.</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="accept">Terima</string>
+    <string name="decline">Tolak</string>
+    <string name="accepted">Diterima</string>
+    <string name="declined">Ditolak</string>
+    <string name="execution_time">Waktu Pelaksanaan</string>
+    <string name="description">Keterangan</string>
+
+    <!--login-->
+    <string name="login">M A S U K</string>
+    <string name="forgot_pass">Anda lupa password?</string>
+    <string name="dont_have_account">Belum punya akun? </string>
+    <string name="signup_here"> Buat disini!</string>
+    <string name="username_or_email">username atau email</string>
+    <string name="password">kata sandi</string>
+    <string name="login_fb">Buat Akun Menggunakan Facebook</string>
+    <string name="login_google">Buat Akun Menggunakan Google</string>
+    <string name="or">ATAU</string>
+    <string name="empty_username">username tidak boleh kosong!</string>
+    <string name="empty_password">password tidak boleh kosong</string>
+    <string name="password_min_6char">password minimal 6 karakter</string>
+
+    <!--signup-->
+    <string name="create_account">Buat Akun</string>
+    <string name="username">Username</string>
+    <string name="assessor_regist_number">Nomor Registrasi Asesor</string>
+    <string name="email">Email</string>
+    <string name="first_name">Nama Depan</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="place_of_birth">Tempat Lahir</string>
+    <string name="date_of_birth">Tanggal Lahir</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="address">Alamat</string>
+    <string name="competencies">Kompetensi</string>
+    <string name="certificates">Sertifikat</string>
+    <string name="active">Aktif</string>
+    <string name="signature">Tanda Tangan</string>
+    <string name="signature_uncompleted">Mohon lengkapi tanda tangan</string>
+    <string name="signature_completed">Tanda tangan lengkap</string>
+    <string name="btn_create_account">B U A T  A K U N</string>
+
+    <!--forgot pass-->
+    <string name="insertEmail">Masukkan email untuk mengganti password</string>
+    <string name="success_reset_password">Berhasil, silakan periksa email anda untuk mengatur ulang kata sandi</string>
+
+    <!--history-->
+    <string name="report_manager">Laporan</string>
+    <string name="empty_report">Anda belum memiliki laporan asesmen.</string>
+    <string name="task_report">Laporan Kegiatan</string>
+    <string name="no_assessment_task">Belum ada asesmen saat ini.</string>
+    <string name="no_completed_task">Belum ada asesmen yang sudah selesai saat ini.</string>
+
+    <!--schedule-->
+    <string name="set_avail_schedule">Atur Jadwal</string>
+    <string name="save_schedule">Simpan Jadwal</string>
+    <string name="schedule_saved">Jadwal Berhasil Disimpan</string>
+    <string name="your_schedule">Jadwal Anda</string>
+    <string name="assessment_schedule">Jadwal Asesmen</string>
+    <string name="are_you_sure">Apa anda yakin?</string>
+    <string name="schedule_confirmation">Anda akan menentukan jadwal asesmen pada tanggal tersebut?</string>
+
+    <!--home-->
+    <string name="empty_letters">Belum ada daftar surat menyurat pada assessment ini.</string>
+    <string name="recomendation_saved">Rekomendasi Tersimpan</string>
+    <string name="recomendation_fail">Gagal Menyimpan Rekomendasi</string>
+
+    <string name="assessment_title">Judul Asesmen</string>
+    <string name="assessment_note">Catatan Asesmen</string>
+    <string name="assessment_start_date">Tanggal Mulai Asesmen</string>
+    <string name="assessment_location">Lokasi Tempat Ujian</string>
+    <string name="tuk_name">Nama TUK Penyelenggara</string>
+
+    <string name="competency_field">Bidang Kompetensi</string>
+    <string name="portofolio_assessee">Portofolio Asesi</string>
+    <string name="basic_portofolio_assessee">Portofolio Dasar Asesi</string>
+
+    <!--profile-->
+    <string name="position">Jabatan</string>
+    <string name="my_portofolio">Portofolio Saya</string>
+    <string name="logout">Keluar</string>
+    <string name="logout_confirmation">Anda yakin ingin keluar?</string>
+    <string name="integrity_pact_attention">Anda belum menandatangani pakta integritas, tanda tangan sekarang?</string>
+    <string name="head_of_lsp">Ketua LSP Energi</string>
+    <string name="co_head_of_lsp">Wakil Ketua LSP Energi</string>
+    <string name="add_certificate_of_expertise">Tambahkan sertifikat keahlian</string>
+
+    <!--edit profile-->
+    <string name="edit_profile">Ubah Profil</string>
+    <string name="save_profile">Simpan profil</string>
+    <string name="save_profile_confirmation">Anda akan menyimpan edit profil?</string>
+    <string name="upload_npwp">Unggah</string>
+    <string name="show_npwp">Lihat NPWP</string>
+    <string name="upload_assessor_certificate">Unggah Sertifikat Assessor</string>
+    <string name="show_assessor_certificate">Lihat Sertifikat Assessor</string>
+
+    <string name="no_npwp">Nomor NPWP</string>
+    <string name="no_nik">Nomor NIK</string>
+    <string name="birth_place">Tempat Lahir</string>
+    <string name="integrity_pact">Pakta Integritas</string>
+
+    <string name="failed_get_photo">Gagal mengambil foto</string>
+    <string name="failed_save_photo">Gagal menyimpan foto profil</string>
+    <string name="success_update_profile">Berhasil ganti profil</string>
+    <string name="failed_update_profile">Gagal ganti profil</string>
+
+    <string name="signature_validation">Anda harus melengkapi tanda tangan terlebih dahulu</string>
+    <string name="enable_locations">Izinkan Akses Lokasi Anda</string>
+    <string name="enable_location_setting">Pengaturan lokasi anda tidak aktif.</string>
+    <string name="please_enable_location">Tolong aktifkan lokasi anda untuk menggunakan aplikasi ini</string>
+    <string name="location_setting">Pengaturan Lokasi</string>
+
+    <string name="add_photo">Tambahkan Foto</string>
+    <string name="take_photo">Ambil Foto dari Kamera</string>
+    <string name="choose_photo">Ambil Foto dari Galeri</string>
+
+    <string name="confirmed">Sudah diterima</string>
+    <string name="waiting_confirmation">Mengunggu konfirmasi</string>
+    <string name="certificate_expired">Masa berlaku sudah habis</string>
+    <string name="expired_date">Berlaku Sampai</string>
+    <string name="verification_date">Tanggal verifikasi</string>
+    <string name="verification_status">Status verifikasi</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+
+    <string name="pakta_integritas_undone">Mohon lengkapi pakta integritas</string>
+    <string name="pakta_integritas_done">Pakta integritas lengkap</string>
+
+    <string name="task">Anda belum mendapatkan tugas saat ini.</string>
+    <string name="certificate">Anda belum menambahkan sertifikasi.</string>
+    <string name="add_certificate">Silahkan tambahkan.</string>
+    <string name="photo_certificate">Tambahkan foto sertifikat anda.</string>
+    <string name="add_photo_certificate">Pilih foto yang lain</string>
+    <string name="certificate_submitted">Sertifikat Anda Berhasil Disimpan</string>
+    <string name="notify_when_completed">Kami akan mengirimkan pemberitahuan jika sudah selesai di ulas</string>
+    <string name="submit_certificate">Kirim</string>
+
+    <!--kompetensi-->
+    <string name="desc_if_recomended">Beri Keterangan Bila Peserta Kompeten</string>
+    <string name="desc_if_not_recomended">Beri Keterangan Bila Peserta Belum Kompeten</string>
+    <string name="desc_placeholder">Keterangan...</string>
+
+    <!--graduate-->
+    <string name="pass_graduate_title">Anda menyatakan peserta lulus assessmen</string>
+    <string name="unpass_graduate_title">Anda menyatakan peserta tidak lulus assessmen</string>
+    <string name="graduate_desc">Apakah anda yakin dengan keputusan anda?</string>
+
+    <string name="choose_your_certificate">Pilih Skema Sertifikasi Anda</string>
+    <string name="choose_your_sub_certificate">Pilih Skema Sub Sertifikasi Anda</string>
+    <string name="failed_send_report_pleno">Gagal mengirim laporan pleno</string>
+
+    <!--menu-->
+    <string name="home">Beranda</string>
+    <string name="report">Laporan</string>
+    <string name="schedule">Jadwal</string>
+    <string name="profile">Profil</string>
+
+    <string name="settings">Pengaturan</string>
+    <string name="term_condition">Syarat dan ketentuan</string>
+    <string name="privacy_policies">Kebijakan privasi</string>
+    <string name="languages">Bahasa</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="english">Inggris</string>
+
+    <string name="facebook_app_id" translatable="false">379583772840503</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1538503969588550</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="deskipsi" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="btn_test_portfolio">Harus Mengikuti Ujian Portofolio</string>
+    <string name="btn_test_competency">Harus Mengikuti Ujian Kompetensi</string>
+
+    <string name="test_method">Akan diuji dengan</string>
+
+    <string name="test_portfolio">Metode uji portofolio</string>
+    <string name="test_competency">Metode uji kompetensi</string>
+    <string name="reset_test">Atur Ulang Metode Uji</string>
+    <string name="alert_nik">NIK tidak boleh kurang dari 16 digit</string>
+    <string name="nik_must_16">Harus 16 Digit</string>
+    <string name="test_status">Status Uji :</string>
+</resources>

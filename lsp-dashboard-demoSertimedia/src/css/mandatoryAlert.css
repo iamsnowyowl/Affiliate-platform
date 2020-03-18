@@ -1,0 +1,5 @@
+.form-control.is-invalid:focus {
+  border-color: #f86c6b;
+  box-shadow: 0 0 0 0.2rem rgba(248, 108, 107, 0.25);
+  /* text-transform: uppercase; */
+}

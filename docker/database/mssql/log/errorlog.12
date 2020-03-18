@@ -1,0 +1,68 @@
+2019-11-19 03:41:49.32 Server      Microsoft SQL Server 2017 (RTM-CU8) (KB4338363) - 14.0.3029.16 (X64) 
+	Jun 13 2018 13:35:56 
+	Copyright (C) 2017 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 16.04.4 LTS)
+2019-11-19 03:41:49.33 Server      UTC adjustment: 0:00
+2019-11-19 03:41:49.33 Server      (c) Microsoft Corporation.
+2019-11-19 03:41:49.34 Server      All rights reserved.
+2019-11-19 03:41:49.34 Server      Server process ID is 4120.
+2019-11-19 03:41:49.35 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2019-11-19 03:41:49.35 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2019-11-19 03:41:49.39 Server      SQL Server detected 2 sockets with 1 cores per socket and 1 logical processors per socket, 2 total logical processors; using 2 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2019-11-19 03:41:49.41 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2019-11-19 03:41:49.41 Server      Detected 1600 MB of RAM. This is an informational message; no user action is required.
+2019-11-19 03:41:49.41 Server      Using conventional memory in the memory manager.
+2019-11-19 03:42:00.88 Server      Buffer pool extension is already disabled. No action is necessary. 
+2019-11-19 03:42:06.23 Server      InitializeExternalUserGroupSid failed. Implied authentication will be disabled.
+2019-11-19 03:42:06.24 Server      Implied authentication manager initialization failed. Implied authentication will be disabled.
+2019-11-19 03:42:06.25 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2019-11-19 03:42:06.68 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2019-11-19 03:42:06.69 Server      Node configuration: node 0: CPU mask: 0x0000000000000003:0 Active CPU mask: 0x0000000000000003:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2019-11-19 03:42:06.71 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2019-11-19 03:42:06.73 Server      In-Memory OLTP initialized on lowend machine.
+2019-11-19 03:42:07.23 Server      XE_XML Add target Failed last error  major:													    48216, m_minor: 2,m_state: 23
+2019-11-19 03:42:07.24 Server      [ERROR] Failed to start XTP XEvent trace session (sql\ntdbms\hekaton\engine\src\hkengine.cpp : 12538 - 'HkEngineCreateXESessions')
+2019-11-19 03:42:07.24 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2019-11-19 03:42:07.27 Server      Query Store settings initialized with enabled = 1, 
+2019-11-19 03:42:07.28 spid6s      Starting up database 'master'.
+2019-11-19 03:42:07.37 Server      Software Usage Metrics is disabled.
+2019-11-19 03:42:17.29 spid6s      Resource governor reconfiguration succeeded.
+2019-11-19 03:42:17.30 spid6s      SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2019-11-19 03:42:17.31 spid6s      SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2019-11-19 03:42:18.03 spid6s      Error: 25602, Severity: 17, State: 23.
+2019-11-19 03:42:18.03 spid6s      The target, "5B2DA06D-898A-43C8-9309-39BBBE93EBBD.package0.event_file", encountered a configuration error during initialization. Object cannot be added to the event session. The operating system returned error 2: 'The system cannot find the file specified.
+' while creating the file '/var/opt/mssql/log/system_health_0_132186085379860000.xel'.
+2019-11-19 03:42:18.08 spid6s      Error: 25710, Severity: 16, State: 1.
+2019-11-19 03:42:18.08 spid6s      Event session "system_health" failed to start. Refer to previous errors in the current session to identify the cause, and correct any associated problems.
+2019-11-19 03:42:18.11 spid6s      Error: 25709, Severity: 16, State: 1.
+2019-11-19 03:42:18.11 spid6s      One or more event sessions failed to start. Refer to previous errors in the current session to identify the cause, and correct any associated problems.
+2019-11-19 03:42:18.22 spid6s      Error: 19098, Severity: 16, State: 1.
+2019-11-19 03:42:18.22 spid6s      An error occurred starting the default trace. Cause: 0x80070002(The system cannot find the file specified.)  Use sp_configure to turn off and then turn on the 'default trace enabled' advanced server configuration option.
+2019-11-19 03:42:18.27 spid6s      Server name is 'd99237a68781'. This is an informational message only. No user action is required.
+2019-11-19 03:42:18.33 spid8s      Starting up database 'mssqlsystemresource'.
+2019-11-19 03:42:18.35 spid6s      Starting up database 'msdb'.
+2019-11-19 03:42:18.36 spid21s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2019-11-19 03:42:18.44 spid21s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2019-11-19 03:42:18.56 spid8s      The resource database build version is 14.00.3029. This is an informational message only. No user action is required.
+2019-11-19 03:42:18.74 spid8s      Starting up database 'model'.
+2019-11-19 03:42:23.36 spid6s      Recovery is writing a checkpoint in database 'msdb' (4). This is an informational message only. No user action is required.
+2019-11-19 03:42:23.86 spid8s      Polybase feature disabled.
+2019-11-19 03:42:23.87 spid8s      Clearing tempdb database.
+2019-11-19 03:42:28.95 spid17s     A self-generated certificate was successfully loaded for encryption.
+2019-11-19 03:42:29.06 spid17s     Server is listening on [ 'any' <ipv4> 1433].
+2019-11-19 03:42:29.08 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434].
+2019-11-19 03:42:29.10 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2019-11-19 03:42:29.17 spid17s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2019-11-19 03:42:31.71 spid8s      Starting up database 'tempdb'.
+2019-11-19 03:42:34.51 spid8s      The tempdb database has 1 data file(s).
+2019-11-19 03:42:34.56 spid21s     The Service Broker endpoint is in disabled or stopped state.
+2019-11-19 03:42:34.56 spid21s     The Database Mirroring endpoint is in disabled or stopped state.
+2019-11-19 03:42:34.60 spid21s     Service Broker manager has started.
+2019-11-19 03:42:34.72 spid6s      Recovery is complete. This is an informational message only. No user action is required.
+2019-11-19 03:42:37.67 spid51      Attempting to load library 'xpsqlbot.dll' into memory. This is an informational message only. No user action is required.
+2019-11-19 03:42:37.88 spid51      Using 'xpsqlbot.dll' version '2017.140.3029' to execute extended stored procedure 'xp_qv'. This is an informational message only; no user action is required.
+2019-11-19 03:42:38.39 spid51      Attempting to load library 'xpstar.dll' into memory. This is an informational message only. No user action is required.
+2019-11-19 03:42:41.11 spid51      Using 'xpstar.dll' version '2017.140.3029' to execute extended stored procedure 'xp_sqlagent_notify'. This is an informational message only; no user action is required.

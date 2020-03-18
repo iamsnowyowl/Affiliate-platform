@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+    <dimen name="margin_horizontal_icon">10dp</dimen>
+    <dimen name="margin_vertical_icon">10dp</dimen>
+    <dimen name="margin_bottom_icon">10dp</dimen>
+    <dimen name="margin_right_icon">10dp</dimen>
+
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="title_size">14sp</dimen>
+
+    <dimen name="button_height">39dp</dimen>
+
+    <dimen name="padding">20dp</dimen>
+    <dimen name="margin_horizontal_layout">20dp</dimen>
+    <dimen name="margin_vertical_layout">10dp</dimen>
+    <dimen name="margin_top_layout">20dp</dimen>
+    <dimen name="margin_bottom_layout">20dp</dimen>
+</resources>

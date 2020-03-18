@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/schedule_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginHorizontal="@dimen/margin_horizontal_layout"
+    android:layout_marginTop="@dimen/margin_top_layout">
+
+    <ImageView
+        android:id="@+id/img_schedule"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="@dimen/margin_right_icon"
+        android:background="@drawable/round" />
+
+    <TextView
+        android:id="@+id/scheduleAsesmen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_schedule"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scheduleDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lower_line"
+        android:layout_marginBottom="@dimen/margin_bottom_icon"
+        android:layout_toRightOf="@id/img_schedule"
+        android:textColor="@color/secondaryTextColor" />
+
+
+    <LinearLayout
+        android:id="@+id/lower_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/secondaryColor"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

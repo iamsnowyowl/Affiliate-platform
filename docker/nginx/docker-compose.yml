@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+   api:
+     container_name: nginx-central
+     image: nginx
+     restart: always
+     tty: true
+     networks:
+       - traefiknet
+       - traefiklocal
+     volumes:
+       - ../../src:/usr/share/app
+       - ./conf/sites-enabled:/etc/nginx/sites-enabled
+       - ./conf/nginx.conf:/etc/nginx/nginx.conf
+     labels:
+       - 'traefik.enable=true'
+       - 'traefik.port=80'
+       - 'traefik.docker.network=traefiknet'
+       - 'traefik.frontend.rule=Host:${HOST}'
+       - 'traefik.protocol=http'
+#       - 'traefik.frontend.redirect.entryPoint=https'
+networks:
+  traefiknet:
+    external: true
+  traefiklocal:
+    external: true

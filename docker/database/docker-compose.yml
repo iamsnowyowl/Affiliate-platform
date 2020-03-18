@@ -1,0 +1,55 @@
+version: '3.7'
+
+services:
+   database-mysql:
+     container_name: mysql-db
+     image: mysql
+     command: --default-authentication-plugin=mysql_native_password
+     restart: always
+     networks:
+       - traefiklocal
+     environment:
+       MYSQL_ROOT_PASSWORD: N5TD3v12345678
+     ports:
+       - "3306:3306"
+     volumes:
+       - ./mysql:/var/lib/mysql
+     depends_on:
+       - database-sqlserver
+   database-sqlserver:
+     container_name: sqlserver-db
+     image: microsoft/mssql-server-linux:2017-CU8
+     restart: always
+     environment:
+       ACCEPT_EULA: Y
+       SA_PASSWORD: Ar12345678
+     ports:
+       - "1433:1433"
+     networks:
+       - traefiklocal
+     volumes:
+       - volume_sqlserver:/var/opt/mssql
+   database-postgresql:
+     depends_on:
+       - database-sqlserver
+     container_name: postgresql-db
+     image: postgres:11.4-alpine
+     restart: always
+     environment:
+       POSTGRES_USER: fahxusef
+       POSTGRES_PASSWORD: embizujbrkfm
+       POSTGRES_DB: hutama_karya
+     volumes:
+      - db:/var/lib/postgresql/data
+      - ./pgsql.conf:/etc/postgresql/postgresql.conf
+#      - /etc/localtime:/etc/localtime
+     ports:
+       - "5432:5432"
+     networks:
+       - traefiklocal
+networks:
+  traefiklocal:
+    external: true
+volumes:
+  db:
+  volume_sqlserver:

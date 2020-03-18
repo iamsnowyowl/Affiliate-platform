@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context=".Main.Fragment.Profile.EditProfile.EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
+
+        <com.github.florent37.diagonallayout.DiagonalLayout
+            android:id="@+id/diagonalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:diagonal_angle="10"
+            app:diagonal_direction="left"
+            app:diagonal_position="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/gradient1" />
+
+        </com.github.florent37.diagonallayout.DiagonalLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_img_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:elevation="10dp"
+            android:src="@drawable/default_profile_pict"
+            app:civ_border_color="@color/md_white_1000"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/md_grey_400" />
+
+        <ImageButton
+            android:id="@+id/edit_btn_pick_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/round"
+            android:elevation="15dp"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/edit_profile"
+            android:textColor="@color/md_white_1000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/edit_img_profile"
+            android:backgroundTint="@color/primaryColorDark"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:textColor="@color/md_grey_600" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_img_profile"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:id="@+id/regist_number_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit_npwp_nik" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/assessor_regist_number"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/edit_no_registrasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/npwp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_npwp_lable"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/edit_npwp_nik" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_npwp_lable"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/no_npwp"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edit_npwp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:inputType="number"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/btn_upload_npwp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/upload_npwp"
+                    android:textAlignment="center"
+                    android:textColor="@color/primaryColorDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/icon_success_npwp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round"
+                    android:padding="2dp"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/nik_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit_npwp_nik" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/no_nik"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/edit_nik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit_email" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="Email"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="35dp"
+                android:text="@string/gender"
+                android:textColor="@color/primaryColorLight"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="45dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primaryColorLight"
+                        android:text="@string/male"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primaryColorLight"
+                        android:text="@string/female"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/birth_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit_tempatlahir" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/birth_place"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/editTempatLahir"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/pick_date"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/schedule" />
+
+                <TextView
+                    android:id="@+id/edit_tgl_lahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="00-00-0000"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Jenis Kelamin"-->
+            <!--android:textColor="@color/md_deep_orange_700" />-->
+
+            <!--<RadioGroup-->
+            <!--android:id="@+id/edit.radioGroup"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/edit.lakilaki"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:buttonTint="@color/md_deep_orange_700"-->
+            <!--android:text="Laki-laki"-->
+            <!--android:id="@+id/edit.perempuan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textColor="@color/md_deep_orange_700"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<RadioButton-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:buttonTint="@color/md_deep_orange_700"-->
+            <!--android:text="Perempuan"-->
+            <!--android:textColor="@color/md_deep_orange_700"-->
+            <!--android:textSize="18sp" />-->
+            <!--</RadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/address"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/edit_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:inputType="text"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit_telp" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryColorDark"
+                    android:hint="@string/phone_number"
+                    android:textColorHint="@color/primaryColorLight"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/EdittextAppearance">
+
+                    <EditText
+                        android:id="@+id/edit_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/primaryColorDark"
+                        android:inputType="number"
+                        android:textColor="@color/md_grey_600" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edit_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_button"
+                    android:elevation="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/signature"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/edit_signature_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryColorDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/edit_pakta_integritas"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:background="@drawable/round_button"-->
+            <!--android:elevation="10dp"-->
+            <!--android:paddingHorizontal="10dp"-->
+            <!--android:text="@string/integrity_pact"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<Space-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/edit_pakta_status"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/primaryColorDark"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+
+            <Button
+                android:id="@+id/edit_sertifikat_bnsp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="@string/upload_assessor_certificate"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sertifikat_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/secondaryTextColor"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/edit_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button"
+                android:elevation="40dp"
+                android:paddingHorizontal="50dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

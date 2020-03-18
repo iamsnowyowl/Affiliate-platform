@@ -1,0 +1,90 @@
+2019-11-18 04:37:06.04 Server      Microsoft SQL Server 2017 (RTM-CU8) (KB4338363) - 14.0.3029.16 (X64) 
+	Jun 13 2018 13:35:56 
+	Copyright (C) 2017 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 16.04.4 LTS)
+2019-11-18 04:37:06.07 Server      UTC adjustment: 0:00
+2019-11-18 04:37:06.07 Server      (c) Microsoft Corporation.
+2019-11-18 04:37:06.08 Server      All rights reserved.
+2019-11-18 04:37:06.09 Server      Server process ID is 4120.
+2019-11-18 04:37:06.09 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2019-11-18 04:37:06.09 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2019-11-18 04:37:06.12 Server      SQL Server detected 2 sockets with 1 cores per socket and 1 logical processors per socket, 2 total logical processors; using 2 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2019-11-18 04:37:06.12 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2019-11-18 04:37:06.12 Server      Detected 1600 MB of RAM. This is an informational message; no user action is required.
+2019-11-18 04:37:06.13 Server      Using conventional memory in the memory manager.
+2019-11-18 04:37:21.43 Server      Buffer pool extension is already disabled. No action is necessary. 
+2019-11-18 04:37:28.47 Server      InitializeExternalUserGroupSid failed. Implied authentication will be disabled.
+2019-11-18 04:37:28.48 Server      Implied authentication manager initialization failed. Implied authentication will be disabled.
+2019-11-18 04:37:28.50 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2019-11-18 04:37:29.16 Server      Node configuration: node 0: CPU mask: 0x0000000000000003:0 Active CPU mask: 0x0000000000000003:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2019-11-18 04:37:29.17 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2019-11-18 04:37:29.19 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2019-11-18 04:37:29.24 Server      In-Memory OLTP initialized on lowend machine.
+2019-11-18 04:37:29.93 Server      XE_XML Add target Failed last error  major:													    48216, m_minor: 2,m_state: 23
+2019-11-18 04:37:29.94 Server      [ERROR] Failed to start XTP XEvent trace session (sql\ntdbms\hekaton\engine\src\hkengine.cpp : 12538 - 'HkEngineCreateXESessions')
+2019-11-18 04:37:29.96 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2019-11-18 04:37:30.02 spid6s      Starting up database 'master'.
+2019-11-18 04:37:30.06 Server      Query Store settings initialized with enabled = 1, 
+2019-11-18 04:37:30.20 Server      Software Usage Metrics is disabled.
+2019-11-18 04:37:33.48 spid6s      279 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
+2019-11-18 04:37:33.52 spid6s      0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
+2019-11-18 04:37:33.54 spid6s      Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
+2019-11-18 04:37:42.36 spid6s      Resource governor reconfiguration succeeded.
+2019-11-18 04:37:42.36 spid6s      SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2019-11-18 04:37:42.37 spid6s      SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2019-11-18 04:37:43.35 spid6s      Error: 25602, Severity: 17, State: 23.
+2019-11-18 04:37:43.35 spid6s      The target, "5B2DA06D-898A-43C8-9309-39BBBE93EBBD.package0.event_file", encountered a configuration error during initialization. Object cannot be added to the event session. The operating system returned error 2: 'The system cannot find the file specified.
+' while creating the file '/var/opt/mssql/log/system_health_0_132185254632640000.xel'.
+2019-11-18 04:37:43.37 spid6s      Error: 25710, Severity: 16, State: 1.
+2019-11-18 04:37:43.37 spid6s      Event session "system_health" failed to start. Refer to previous errors in the current session to identify the cause, and correct any associated problems.
+2019-11-18 04:37:43.39 spid6s      Error: 25709, Severity: 16, State: 1.
+2019-11-18 04:37:43.39 spid6s      One or more event sessions failed to start. Refer to previous errors in the current session to identify the cause, and correct any associated problems.
+2019-11-18 04:37:43.54 spid6s      Error: 19098, Severity: 16, State: 1.
+2019-11-18 04:37:43.54 spid6s      An error occurred starting the default trace. Cause: 0x80070002(The system cannot find the file specified.)  Use sp_configure to turn off and then turn on the 'default trace enabled' advanced server configuration option.
+2019-11-18 04:37:43.58 spid6s      Server name is 'd99237a68781'. This is an informational message only. No user action is required.
+2019-11-18 04:37:43.63 spid19s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2019-11-18 04:37:43.65 spid19s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2019-11-18 04:37:43.66 spid9s      Starting up database 'mssqlsystemresource'.
+2019-11-18 04:37:43.66 spid6s      Starting up database 'msdb'.
+2019-11-18 04:37:43.67 spid9s      The resource database build version is 14.00.3029. This is an informational message only. No user action is required.
+2019-11-18 04:37:43.78 spid9s      Starting up database 'model'.
+2019-11-18 04:37:48.78 spid6s      2 transactions rolled forward in database 'msdb' (4:0). This is an informational message only. No user action is required.
+2019-11-18 04:37:48.80 spid6s      0 transactions rolled back in database 'msdb' (4:0). This is an informational message only. No user action is required.
+2019-11-18 04:37:48.81 spid6s      Recovery is writing a checkpoint in database 'msdb' (4). This is an informational message only. No user action is required.
+2019-11-18 04:37:49.15 spid9s      Polybase feature disabled.
+2019-11-18 04:37:49.16 spid9s      Clearing tempdb database.
+2019-11-18 04:37:58.11 spid9s      Starting up database 'tempdb'.
+2019-11-18 04:37:58.13 spid17s     A self-generated certificate was successfully loaded for encryption.
+2019-11-18 04:37:58.27 spid17s     Server is listening on [ 'any' <ipv4> 1433].
+2019-11-18 04:37:58.28 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434].
+2019-11-18 04:37:58.28 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2019-11-18 04:37:58.34 spid17s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2019-11-18 04:38:01.39 spid9s      The tempdb database has 1 data file(s).
+2019-11-18 04:38:01.41 spid19s     The Service Broker endpoint is in disabled or stopped state.
+2019-11-18 04:38:01.42 spid19s     The Database Mirroring endpoint is in disabled or stopped state.
+2019-11-18 04:38:01.45 spid19s     Service Broker manager has started.
+2019-11-18 04:38:01.55 spid6s      Recovery is complete. This is an informational message only. No user action is required.
+2019-11-18 04:38:03.86 spid58      Attempting to load library 'xpsqlbot.dll' into memory. This is an informational message only. No user action is required.
+2019-11-18 04:38:04.17 spid58      Using 'xpsqlbot.dll' version '2017.140.3029' to execute extended stored procedure 'xp_qv'. This is an informational message only; no user action is required.
+2019-11-18 04:38:04.57 spid58      Attempting to load library 'xpstar.dll' into memory. This is an informational message only. No user action is required.
+2019-11-18 04:38:08.35 spid58      Using 'xpstar.dll' version '2017.140.3029' to execute extended stored procedure 'xp_sqlagent_notify'. This is an informational message only; no user action is required.
+2019-11-18 10:42:16.67 Server      Using 'dbghelp.dll' version '4.0.5'
+2019-11-18 10:42:17.93 Server      **Dump thread - spid = 0, EC = 0x0000000000000000
+2019-11-18 10:42:17.96 Server      ***Stack Dump being sent to /var/opt/mssql/log/SQLDump0001.txt
+2019-11-18 10:42:17.96 Server      * *******************************************************************************
+2019-11-18 10:42:17.97 Server      *
+2019-11-18 10:42:17.98 Server      * BEGIN STACK DUMP:
+2019-11-18 10:42:17.98 Server      *   11/18/19 10:42:17 spid 4484
+2019-11-18 10:42:17.99 Server      *
+2019-11-18 10:42:17.99 Server      * Stalled Resource Monitor
+2019-11-18 10:42:18.00 Server      *
+2019-11-18 10:42:18.00 Server      * *******************************************************************************
+2019-11-18 10:42:18.01 Server      * -------------------------------------------------------------------------------
+2019-11-18 10:42:18.01 Server      * Short Stack Dump
+2019-11-18 10:42:18.30 Server      Stack Signature for the dump is 0x0000000000000331
+2019-11-18 10:42:36.78 Server      External dump process return code 0x20000001.
+External dump process returned no errors.
+2019-11-18 10:42:36.81 Server      Resource Monitor (0x1180) Worker 0x00000004EC05E160 appears to be non-yielding on Node 0. Memory freed: 0 KB. Last wait: MISCELLANEOUS. Last clerk: type CACHESTORE_QDSRUNTIMESTATS, name QDSRuntimeStatsManager. Approx CPU Used: kernel 0 ms, user 0 ms, Interval: 320728.

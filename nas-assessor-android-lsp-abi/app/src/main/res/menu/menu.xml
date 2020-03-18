@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Beranda"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab_history"
+        android:icon="@drawable/history"
+        android:title="History"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Profil"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab_schedule"
+        android:enabled="true"
+        android:icon="@drawable/schedule"
+        android:title="Pilih Jadwal"
+        app:showAsAction="ifRoom" />
+</menu>

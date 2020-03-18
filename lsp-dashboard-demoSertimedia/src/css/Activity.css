@@ -1,0 +1,11 @@
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  background-color: rgb(74, 226, 74);
+}
+
+input#address {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  width: 100%;
+}

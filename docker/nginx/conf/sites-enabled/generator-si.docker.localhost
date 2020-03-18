@@ -1,0 +1,27 @@
+server {
+        listen 80;
+        listen [::]:80;
+        index index.php index.html index.htm;
+        server_name generator-si.docker.localhost;
+        error_log  /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+
+        server_tokens off;
+        error_page 404 /404.html;
+        error_page 500 502 503 504 /50x.html;
+
+        location / {
+                root /usr/share/app/generator_si;
+                #limit_conn conn_limit_per_ip 40;
+                #limit_req zone=req_limit_per_ip burst=40 nodelay;
+
+                try_files $uri $uri /index.php?$query_string;
+                location /index.php {
+                        root /usr/share/app/generator_si;
+                        fastcgi_pass php7.2.10-fpm:9000;
+                        fastcgi_index index.php;
+                        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                        include fastcgi_params;
+                }
+        }
+}

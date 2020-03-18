@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <com.byox.drawview.views.DrawView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="57dp"
+            app:dv_draw_alpha="255"
+            app:dv_draw_anti_alias="true"
+            app:dv_draw_color="#000"
+            app:dv_draw_corners="round"
+            app:dv_draw_dither="true"
+            app:dv_draw_enable_zoom="true"
+            app:dv_draw_font_family="default_font"
+            app:dv_draw_font_size="12"
+            app:dv_draw_max_zoom_factor="8"
+            app:dv_draw_mode="draw"
+            app:dv_draw_style="stroke"
+            app:dv_draw_tool="pen"
+            app:dv_draw_width="4"
+            app:dv_draw_zoomregion_maxscale="5"
+            app:dv_draw_zoomregion_minscale="2"
+            app:dv_draw_zoomregion_scale="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="40dp"
+            android:rotation="90"
+            android:text="@string/assign_here"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_save_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_button"
+            android:text="@string/save" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:tag="0"
+        android:tint="#FFF"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/x"
+        tools:ignore="VectorDrawableCompat" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context=".Main.Fragment.Profile.EditProfile.PaktaIntegritas.EditPaktaIntegritas">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <Button
+        android:id="@+id/assign_signature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/round_button"
+        android:elevation="10dp"
+        android:text="@string/signature"
+        android:textStyle="bold" />
+
+</RelativeLayout>
